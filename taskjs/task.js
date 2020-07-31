@@ -103,3 +103,21 @@
 //   formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
 // );
 // 'Vestibulum facilisis, purus ne...'
+
+// task 5
+
+// function checkForSpam(str) {
+//   // Write code under this line
+//   const strings = str.toLowerCase();
+
+//   let message = strings.includes("spam") || strings.includes("sale");
+//   return message;
+// }
+
+// console.log(checkForSpam("Latest technology news")); // false
+
+// console.log(checkForSpam("JavaScript weekly newsletter")); // false
+
+// console.log(checkForSpam("Get best sale offers now!")); // true
+
+// console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
