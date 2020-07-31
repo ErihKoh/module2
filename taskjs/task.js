@@ -56,26 +56,50 @@
 
 // task 3
 
-function findLongestWord(string = "") {
+// function findLongestWord(string = "") {
+//   // Write code under this line
+//   const strings = string.split(" ");
+//   let longestWord = "";
+//   let elementLength = 0;
+//   for (const element of strings) {
+//     console.log(element);
+//     if (element.length > elementLength) {
+//       elementLength = element.length;
+//       longestWord = element;
+//     }
+//   }
+//   return longestWord;
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// // 'jumped'
+
+// console.log(findLongestWord("Google do a roll"));
+// // // 'Google'
+
+// console.log(findLongestWord("May the force be with you"));
+// // 'force'
+
+// task 4
+
+function formatString(string, maxLength = 40) {
   // Write code under this line
-  const strings = string.split(" ");
-  let longestWord = "";
-  let elementLength = 0;
-  for (const element of strings) {
-    console.log(element);
-    if (element.length > elementLength) {
-      elementLength = element.length;
-      longestWord = element;
-    }
+  let str = string.split("");
+  if (str.length > maxLength) {
+    str.length = maxLength;
+    str.push("...");
   }
-  return longestWord;
+  let newStr = str.join("");
+  return newStr;
 }
 
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-// 'jumped'
+console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// 'Curabitur ligula sapien, tincidunt non.'
 
-console.log(findLongestWord("Google do a roll"));
-// // 'Google'
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// 'Vestibulum facilisis, purus nec pulvinar...'
 
-console.log(findLongestWord("May the force be with you"));
-// 'force'
+console.log(
+  formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
+);
+// 'Vestibulum facilisis, purus ne...'
