@@ -82,24 +82,24 @@
 
 // task 4
 
-function formatString(string, maxLength = 40) {
-  // Write code under this line
-  let str = string.split("");
-  if (str.length > maxLength) {
-    str.length = maxLength;
-    str.push("...");
-  }
-  let newStr = str.join("");
-  return newStr;
-}
+// function formatString(string, maxLength = 40) {
+//   // Write code under this line
+//   let str = string.split("");
+//   if (str.length > maxLength) {
+//     str.length = maxLength;
+//     str.push("...");
+//   }
+//   let newStr = str.join("");
+//   return newStr;
+// }
 
-console.log(formatString("Curabitur ligula sapien, tincidunt non."));
-// 'Curabitur ligula sapien, tincidunt non.'
+// console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// // 'Curabitur ligula sapien, tincidunt non.'
 
-console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
-// 'Vestibulum facilisis, purus nec pulvinar...'
+// console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// // 'Vestibulum facilisis, purus nec pulvinar...'
 
-console.log(
-  formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
-);
+// console.log(
+//   formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
+// );
 // 'Vestibulum facilisis, purus ne...'
