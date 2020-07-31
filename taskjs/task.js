@@ -56,22 +56,38 @@
 
 // task 3
 
-function findLongestWord(string = "") {
-  // Write code under this line
-  const elementString = [];
-  const strings = string.split(" ");
-  for (const elementStrings of strings) {
-    console.log(elementStrings);
-  }
-  const elementStrings = elementString.split(" ");
-  return elementStrings;
-}
+// function findLongestWord(string = "") {
+//   // Write code under this line
+//   const strings = string.split(" ");
 
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-// 'jumped'
+//   for (let element of strings) {
+//     let elementLength = strings[1].length;
+//     if (element.length > elementLength) {
+//       let LongestWord = element;
+//       return LongestWord;
+//     }
+//   }
+// }
 
-//console.log(findLongestWord('Google do a roll'));
-// 'Google'
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// // 'jumped'
 
-//console.log(findLongestWord('May the force be with you'));
+// console.log(findLongestWord("Google do a roll"));
+// // 'Google'
+
+// console.log(findLongestWord("May the force be with you"));
 // 'force'
+
+// function findLongestWord(string = "") {
+//   // Write code under this line
+//   const strings = string.split(" ");
+//   let biggestWord = "";
+
+//   for (let i = 0; i < strings.length; i += 1) {
+//     let biggestLength = strings[1].length;
+//     if (strings[i].length > biggestLength) {
+//       biggestWord = strings[i];
+//       return biggestWord;
+//     }
+//   }
+// }
