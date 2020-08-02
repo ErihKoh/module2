@@ -237,10 +237,3 @@
 
 // console.log(addLogin(logins, "jqueryisextremelyfast"));
 // // 'Ошибка! Логин должен быть от 4 до 16 символов'
-const add = function (value, ...args) {
-  console.log(value); // первый аргумент
-  console.log(args); // массив всех остальных аргументов
-};
-
-add(10, 1, 2, 3);
-add(15, 1, 2, 3, 4, 5);
