@@ -202,7 +202,7 @@
 
 // function isLoginUnique(allLogins, login) {
 //   // Write code under this line
-//   return allLogins.includes(login) ? false : true;
+//   return (!allLogins.includes(login));
 // }
 
 // function addLogin(allLogins, login) {
